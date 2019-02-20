@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <meta charset = 'utf-8'>
+  <meta http-equiv = 'x-ua-compatible' content = 'ie=edge'>
+  <title>Cracker</title>
+  <meta name = 'description' content = ''>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.css">
+  <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+<header class = 'header'>
+  <div class = 'order-info'>
+    <div class = 'wrapper wrapper__order-bar'>
+        <div class = 'order_quantity'>
+        <img src = 'img/semen.png' alt = ''
+              class = 'order_icon'>
+        <p class = 'order_note'>3</p>
+        </div>
+        <p class = 'order_total'>
+        total:
+        <span class = 'order_price'>
+        143 €
+        </span>
+        </p>
+        <button class = 'order_details'
+          id = 'js-order_details'>
+        details
+        </button>
+        <div class = 'order-info_popup'
+             id = 'js-order-info_popup'>
+            <div class = 'popup_wrapper'>
+                <table class = 'calc'>
+                    <tbody>
+                    <tr class = 'calc_head'>
+                        <th class = 'calc_head-cell-semen'></th>
+                        <th class = 'calc_head-cell'>
+                            <img class = 'calc_ingredient-icon'
+                                 src = 'img/soybean.png'
+                                 alt = 'soybean'>
+                        </th>
+                        <th class = 'calc_head-cell'>
+                            <img class = 'calc_ingredient-icon'
+                                 src = 'img/sesame.png'
+                                 alt = 'sesame'>
+                        </th>
+                        <th class = 'calc_head-cell'>
+                            <img class = 'calc_ingredient-icon'
+                                 src = 'img/wheat.png'
+                                 alt = 'wheat'>
+                        </th>
+                        <th class = 'calc_head-cell'>
+                            <img class = 'calc_ingredient-icon'
+                                 src = 'img/corn.png'
+                                 alt = 'corn'>
+                        </th>
+                    </tr>
+                    <tr class = 'calc_portion'>
+                        <td class = 'calc_ingredient-percentage'>4%</td>
+                        <td class = 'calc_ingredient-percentage'>15%</td>
+                        <td class = 'calc_ingredient-percentage'>61%</td>
+                        <td class = 'calc_ingredient-percentage'>20%</td>
+                        <td class = 'calc_weight'>1.50kg</td>
+                        <td class = 'calc_cost-portion'>81.50€</td>
+                        <td class = 'calc_remove-portion'>
+                            <button class = 'btn__remove'>
+                                <img src = 'img/remove.png' alt = 'remove-portion'>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class = 'calc_portion'>
+                        <td class = 'calc_ingredient-percentage'>14%</td>
+                        <td class = 'calc_ingredient-percentage'>19%</td>
+                        <td class = 'calc_ingredient-percentage'>51%</td>
+                        <td class = 'calc_ingredient-percentage'>16%</td>
+                        <td class = 'calc_weight'>0.50kg</td>
+                        <td class = 'calc_cost-portion'>28.50€</td>
+                        <td class = 'calc_remove-portion'>
+                            <button class = 'btn__remove'>
+                                <img src = 'img/remove.png' alt = 'remove-portion'>
+                            </button>                        </td>
+                    </tr>
+                    <tr class = 'calc_portion'>
+                        <td class = 'calc_ingredient-percentage'>5%</td>
+                        <td class = 'calc_ingredient-percentage'>14%</td>
+                        <td class = 'calc_ingredient-percentage'>65%</td>
+                        <td class = 'calc_ingredient-percentage'>16%</td>
+                        <td class = 'calc_weight'>0.66kg</td>
+                        <td class = 'calc_cost-portion'>33.00€</td>
+                        <td class = 'calc_remove-portion'>
+                            <button class = 'btn__remove'>
+                                <img src = 'img/remove.png' alt = 'remove-portion'>
+                            </button>                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class = 'calc_checkout-wrapper'>
+                    <p class = 'calc_total'>
+                        total:
+                        <span class = 'calc_price'>
+                    143 €
+                    </span>
+                    </p>
+                    <button class = 'btn btn__calc_checkout'>checkout</button>
+                </div>
+                <button class = 'close-popup'
+                        id = 'js-close-popup'>
+                    <span class = 'close-popup_text'>🞩</span>
+                </button>
+            </div>
+    </div>
+    </div>
+
+  </div>
+  <div class = 'navbar'>
+    <div class = 'wrapper wrapper__navbar'>
+      <div class = 'cracker-logotype'>
+        Cracker
+        <span class = 'logo'>
+          logo
+        </span>
+      </div>
+      <nav class = 'header_nav'>
+          <svg class = 'header_nav-sandwich'
+               id = 'js-header_nav-sandwich'
+               xmlns = 'http://www.w3.org/2000/svg'
+               width='32'
+               height='32'
+               viewBox='0 0 32 32'>
+          <path fill='#fff'
+                d = 'M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z'>
+          </path>
+        </svg>
+        <ul class = 'nav_menu'
+            id = 'js-nav_menu'>
+          <li class = 'nave-menu_button-close'>
+            <button class = 'close-popup close-popup-nav'
+                  id = 'js-close-popup-nav'>
+              <span class = 'close-popup-nav_text'>🞩</span>
+            </button>
+          </li>
+          <li class = 'nav_item'>home</li>
+          <li class = 'nav_item'>about us</li>
+          <li class = 'nav_item'>contacts</li>
+          <li class = 'nav_item'>checkout</li>
+          <li class = 'nav_item'>account</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class = 'header_promo'>
+    <div class = 'header_promo-holder'>
+      <div class = 'header_promo-inner'>
+        <p class = 'header_promo-text'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Lorem ipsum dolor sit amet,
+        </p>
+      </div>
+      <h2 class = 'lg-heading heading__promo'>
+        mostly tastes
+        <br>
+        with freshes
+      </h2>
+    </div>
+    <div class = 'wrapper wrapper__promo-btn'>
+      <button class = 'btn btn__promo'>taste it</button>
+    </div>
+  </div>
+</header>
+
+<main class = 'main'>
+  <section class = 'about'>
+      <h2 class = 'lg-heading heading__about'>about cracker</h2>
+      <div class = 'about_inner'>
+        <p class = 'about_text'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, architecto beatae
+          vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+          adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
+        <p class = 'sign'>Cracker</p>
+      </div>
+  </section>
+
+  <section class = 'constructor'>
+    <div class = 'wrapper wrapper__constructor'>
+      <h2 class = 'lg-heading heading__constructor'>
+        cracker constructor
+      </h2>
+      <div class = 'cracker-constructor'>
+        <p class = 'current-value'>
+          current value:
+          <span class = 'current-price'>
+            143 €
+          </span>
+        </p>
+
+        <form action=''
+              class = 'slider-container'>
+                <div class="slide-wrapper">
+                    <div class="slide slide__soybean"
+                         id="js-soybean-slide"></div>
+                    <p  class="slide-label slide-label__soybean"
+                        id="js-soybean-label">0</p>
+                </div>
+
+                <div class="slide-wrapper">
+                    <div class="slide slide__sesame"
+                         id="js-sesame-slide"></div>
+                    <p  class="slide-label slide-label__sesame"
+                        id="js-sesame-label">0</p>
+                </div>
+
+                <div class="slide-wrapper">
+                    <div class="slide slide__wheat"
+                         id="js-wheat-slide"></div>
+                    <p  class="slide-label slide-label__wheat"
+                        id="js-wheat-label">0</p>
+                </div>
+
+                <div class="slide-wrapper">
+                    <div class="slide slide__corn"
+                         id="js-corn-slide"></div>
+                    <p  class="slide-label slide-label__corn"
+                        id="js-corn-label">0</p>
+                </div>
+            <div class = 'select-container'>
+            <ul class = 'select'>
+              <li class = 'select_placeholder'>
+                <input class = 'select_close' type='radio' name='package' id = 'option-close' value=''/>
+                <span class = 'select_label select_label-placeholder'>choose your pack</span>
+              </li>
+              <li class = 'select_items'>
+                <input class = 'select_expand' type='radio' name='package' id = 'option-opener'/>
+                <label class = 'select_closeLabel' for='option-close'></label>
+                <ul class = 'select_options'>
+                  <li class = 'select_option'>
+                    <input class = 'select_input' type='radio' name='package' id = 'option-small'/>
+                    <label class = 'select_label' for='option-small'>small pack</label>
+                  </li>
+                  <li class = 'select_option'>
+                    <input class = 'select_input' type='radio' name='package' id = 'option-medium'/>
+                    <label class = 'select_label' for='option-medium'>medium pack</label>
+                  </li>
+                  <li class = 'select_option'>
+                    <input class = 'select_input' type='radio' name='package' id = 'option-large'/>
+                    <label class = 'select_label' for='option-large'>large pack</label>
+                  </li>
+                </ul>
+                <label class = 'select_expandLabel' for='option-opener'></label>
+              </li>
+            </ul>
+          </div>
+          <button type='button'
+                  class = ' btn btn__add-cracker'>
+            +
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class = 'footer'>
+  <div class = 'wrapper'>
+    <div class = 'contacts'>
+      <div class = 'contact_inner contact__phone'>
+        <h3 class = 'md-heading heading__phone'>phone</h3>
+        <p class = 'contact_phone-number contact_text'>
+          +43 ( 987 ) 345 - 6782
+        </p>
+      </div>
+      <div class = 'contact_inner contact__adds'>
+        <h3 class = 'md-heading heading__adds'>address</h3>
+        <p class = 'contact_address contact_text'>
+          Cracker Inc. <br>
+          10 Cloverfield Lane <br>
+          Berlin, IL 10928 <br>
+          Germany
+        </p>
+      </div>
+      <div class = 'contact_inner contact__socials'>
+        <h3 class = 'md-heading heading__socials'>share us</h3>
+        <p class = 'contact_socials-pinterest contact_link'>
+            <a href = 'https://www.pinterest.com/'>
+                https://www.pinterest.com/
+            </a>
+        </p>
+        <p class = 'contact_socials-fecebook contact_link'>
+            <a href = 'https://www.fecebook.com/'>
+                https://www.fecebook.com/
+            </a>
+        </p>
+        <p class = 'contact_socials-google contact_link'>
+            <a href = 'https://www.google.com/'>
+                https://www.google.com/
+            </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src = 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.js'></script>
+<script src = 'all.js'></script>
+</body>
+</html>
